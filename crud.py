@@ -1,3 +1,5 @@
+#Testes de um possível Crud com sqlite3
+
 import sqlite3
 
 # conecta ao banco de dados
@@ -16,7 +18,7 @@ conn.execute("INSERT INTO alunos (NOME, IDADE) VALUES ('João', 20)")
 conn.execute("UPDATE alunos SET NOME = 'Maria' WHERE ID = 1")
 
 # remove um registro
-conn.execute("DELETE FROM alunos WHERE ID = 1")
+conn.execute("DELETE FROM alunos WHERE ID = 1") 
 
 # lê todos os registros
 cursor = conn.execute("SELECT * FROM alunos")
